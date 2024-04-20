@@ -22,16 +22,9 @@ namespace OddEvennums
             Console.WriteLine();
 
         }
-        public static bool isEven(int num)
-        {
-            if(num%2==0) return true;
-            else return false;
-        }
-        public static bool isOdd(int num)
-        {
-            if (num % 2 != 0) return true;
-            else return false;
-        }
+        public static bool isEven(int num) => num % 2 == 0;
+        public static bool isOdd(int num)=> !isEven(num);
+
     }
 
 }
